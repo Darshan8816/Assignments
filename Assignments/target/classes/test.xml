@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="Dependency_Demo.Dependency_injection">
+		<property name="id" value="101"></property>
+		
+		<constructor-arg name="emp_name" value="Darshan" />
+		<constructor-arg name="emp_email" value="Darshan@gmail.com" />
+		<constructor-arg name="phone" value="9008178816" />
+
+		<property name="employee_id">
+			<list>
+				<value>101</value>
+				<value>101</value>
+				<value>101</value>
+			</list>
+		</property>
+
+		<property name="employee_email">
+			<map>
+				<entry key="Darshan" value="darshan@gmail.com" />
+				<entry key="Manu" value="manu@gmail.com" />
+				<entry key="Sagar" value="sagar@gmail.com" />
+			</map>
+		</property>
+
+	</bean>
+
+
+</beans>
